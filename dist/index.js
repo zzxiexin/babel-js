@@ -12,14 +12,15 @@ var greet = function greet(name) {
 };
 greet('World');
 var Person = /*#__PURE__*/function () {
-  function Person(name) {
+  function Person(name, age) {
     _classCallCheck(this, Person);
     this.name = name;
+    this.age = age;
   }
   return _createClass(Person, [{
     key: "greet",
     value: function greet() {
-      console.log("Hello, my name is ".concat(this.name, "!"));
+      console.log("Hello, my name is ".concat(this.name, " and I am ").concat(this.age, " years old."));
     }
   }]);
 }();
